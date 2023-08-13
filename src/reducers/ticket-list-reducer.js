@@ -11,7 +11,7 @@ const reducer = (state = {}, action) => {
         },
       });
     case "DELETE_TICKET":
-      let newState = { ...state };
+      const newState = { ...state };
       delete newState[id];
       return newState;
     default:
